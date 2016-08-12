@@ -66,7 +66,7 @@ def main():
         if i == 'compact':new_input.extend(['-ur',i,'-pbc','res'])
         if i == 'dump':
             new_input[-1]='vis-'+file_name+'.pdb'
-            new_input.extend(['-dump','100'])
+            new_input.extend(['-dump','100100'])
         if i == 'fit':
             new_input[-1] = 'vis-'+file_name+'.xtc'
             new_input.extend(['-fit','rot+trans','-n','index.ndx'])

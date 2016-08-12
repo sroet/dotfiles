@@ -31,7 +31,7 @@ def main():
         if argument[0] == 'ATOM':
 
             # Needed because if ResID > 999 chain and ResID are 1 argument
-            if len(argument) == 11:
+            if len(argument) == 12 or len(argument)== 11:
                 if argument[4] != chain:
                     chain = argument[4]
                     seq_file.write('\n\nChain '+chain+':\n')
